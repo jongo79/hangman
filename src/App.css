@@ -1,38 +1,190 @@
-.App {
+
+
+
+.container {
+  padding: 0px;
+  text-align: center;
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Adjust the height of the main container */
+  width: 100wh;
+  position: relative;
+}
+
+h3 {
+  padding: 0; /* Set padding to 0 */
+  margin: 0; /* Set margin to 0 */
+}
+
+.title {
+  height: 30px;
+}
+
+
+.images-container {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-images, .game-state-images {
+  height: 60px;
+}
+
+.image {
+  width: 73px; /* Set a fixed width for the images */
+  height: auto; /* Let the height adjust proportionally */
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.counterImage {
+  width: 50px; /* Set a fixed width for the images */
+  height: auto; /* Let the height adjust proportionally */
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+
+
+.keyboard {
+text-align: center;}
+
+.numKeyboard {
+  margin-top: -85px;
+  padding: 10px;
+  cursor: move;
+  width: 68px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0;
+  align-items: center;
+ 
+}
+
+.charKeyboard {
+  margin-top: 10px;
+  width: 315px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 72px;
+  /* Add margin to separate the keyboards */
+}
+
+.sentenceLetter,
+#letterDiv {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 3px solid #000;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.button {
+  margin: 1px;
+  font-weight: 500;
+  font-size: 9px;
+}
+
+.button2 {
+  margin: 2px;
+  font-weight: 500;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+
+.button3 {
+  margin: 2px;
+  font-weight: 500;
+  width: 17px;
+  height: 17px;
+  font-size: 10px;
+}
+
+.display {
+  display: inline-block;
+  .justify-content: center;
+  align-items: center;
+}
+
+
+
+#squares {
+  width:690;
+}
+
+#letter {
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+}
+
+.letterDisplay {
+  display: inline-block;
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000;
+  border-radius: 3px;
+  width: 40px;
+  /* Set the width of the container */
+  height: 40px;
+  /* Set the height of the container */
+  line-height: 1px;
+}
+
+#keyMap {
+  font-size: 6px !important;
+  vertical-align: super;
+  /* Adjust the vertical alignment to make the number appear smaller */
+  color: rgb(25, 159, 236);
+}
+
+.levelAcces {
+  font-size: 14px;
+  font-weight:bold;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.levelAcces2 {
+  height: 22px;
+  background-color: cyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#leyenda {
+  font-size: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#author {
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.br {
+  height: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+// Adivine el número
+
+p {
+  color: #666;
 }
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
